@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  overflow: hidden;
+  height: 500px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.5s ease-in-out;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.image-container {
+  display: block;
+  background-image: url("india-smile.webp");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  overflow: hidden;
+ transition: 0.5s ease-in-out;
+}
+
+.circleo {
+  color: white;
+  background-color: orange;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  
+}
+
+.rectangleo {
+  color: white;
+  background-color: orange;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+    top: -34px;
+    left: 0;
+}
+
+.centered-text {
+  background-color: white;
+  padding: 30px;
+  position: absolute;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+
+h2 {
+  color: orange;
+  margin-top: 15px;
+}
+
+.movingp {
+  margin-top: 10px;
+  opacity: 0;
+  transition: 0.2s opacity 0.1s ease-in-out;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30px;
+  margin-top: 150px;
+  gap: 20px;
+  z-index: 1;
+  position: relative;
+  background-color: white;
+  
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.card:hover .image-container {
+    transform: scale(1.1);
+    opacity: .6;
+  }
+
+.card:hover .centered-text {
+  transform: translateY(-100px);
+}
+.card:hover .movingp {
+    display: block;
+    height: auto;
+    opacity: 1;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* transition 
+.transition {
+}
+.transition::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: white;
+
+  transition: height 0.5s;
+}
+
+.transition:hover::before {
+  height: 50%;
+}
+
+/* 
+
+.transition:hover .rectangleo,
+.transition:hover h1,
+.transition:hover h2,
+.transition:hover .movingp {
+  transform: translateY(-150px);
+  z-index: 3;
+}
+
+
+.transition:hover .image-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.transition:hover .movingp {
+  display: block;
+}

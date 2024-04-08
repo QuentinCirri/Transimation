@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+
+}
+p {
+    font-weight: bold;
+    border: 5px solid white;
+    color: white;
+    margin: auto;
+    padding: 20px;
+
+}
+p:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    transform: scale(3);
+}
